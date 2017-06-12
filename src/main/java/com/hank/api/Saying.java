@@ -6,6 +6,7 @@ import org.hibernate.validator.constraints.Length;
 /**
  * Created by Hank on 6/12/2017.
  * This is the project API. It contains id and content.
+ * API content can be initialized by Configuration class.
  */
 public class Saying {
 
