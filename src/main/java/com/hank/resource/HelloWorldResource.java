@@ -15,11 +15,12 @@ import java.util.concurrent.atomic.AtomicLong;
  * Created by Hank on 6/12/2017.
  * This is a Jersey resource. It handles http request and return an API instance.
  * Finally it writes the API to json format as response(this needs to add JsonProperty annotation for api variables).
+ * Make api restful.
  */
 // url of web service
 @Path("/hello-dw")
 // convert api instance to json format
-@Produces(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)    // Content-Type: application/json
 public class HelloWorldResource {
 
     private final String template;
