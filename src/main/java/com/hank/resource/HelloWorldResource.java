@@ -13,9 +13,12 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by Hank on 6/12/2017.
+ * This is a Jersey resource. It handles http request and return an API instance.
+ * Finally it writes the API to json format as response(this needs to add JsonProperty annotation for api variables).
  */
 // url of web service
 @Path("/hello-dw")
+// convert api instance to json format
 @Produces(MediaType.APPLICATION_JSON)
 public class HelloWorldResource {
 
@@ -29,9 +32,9 @@ public class HelloWorldResource {
         this.counter = new AtomicLong();
     }
 
-    @GET
+    @GET    // http request method
     @Timed
-    public Saying sayHello(@QueryParam("name") Optional<String> name) {
+    public Saying sayHello(@QueryParam("name") Optional<String> name) {    // request optional param
         final String content = String.format(template, name.or(defaultName));
         return new Saying(counter.incrementAndGet(), content);
     }

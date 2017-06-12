@@ -8,6 +8,8 @@ import io.dropwizard.setup.Environment;
 
 /**
  * Created by Hank on 5/27/2017.
+ * Application is main class of DW.
+ * Need override run method: new a Jersey instance and register it to environment
  */
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
 

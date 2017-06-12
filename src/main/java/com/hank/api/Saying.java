@@ -5,12 +5,13 @@ import org.hibernate.validator.constraints.Length;
 
 /**
  * Created by Hank on 6/12/2017.
+ * This is the project API. It contains id and content.
  */
 public class Saying {
 
     private long id;
 
-    // Java Bean will check the length of content
+    // Hibernate validator will check the length of content
     @Length(max = 3)
     private String content;
 
@@ -23,7 +24,7 @@ public class Saying {
         this.content = content;
     }
 
-    // Jackson will map the java object to json file
+    // allow Jackson mapping the java object to json file
     @JsonProperty
     public long getId() {
         return id;
