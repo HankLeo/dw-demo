@@ -13,7 +13,7 @@ public class HelloWorldConfiguration extends Configuration{
     private String template;
 
     @NotEmpty
-    private String name = "Stranger";
+    private String defaultName = "Stranger";
 
     @JsonProperty
     public String getTemplate() {
@@ -26,13 +26,13 @@ public class HelloWorldConfiguration extends Configuration{
     }
 
     @JsonProperty
-    public String getName() {
-        return name;
+    public String getDefaultName() {
+        return defaultName;
     }
 
     @JsonProperty
-    public void setName(String name) {
-        this.name = name;
+    public void setDefaultName(String defaultName) {
+        this.defaultName = defaultName;
     }
 
 }

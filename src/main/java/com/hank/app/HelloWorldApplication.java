@@ -1,6 +1,7 @@
 package com.hank.app;
 
 import com.hank.config.HelloWorldConfiguration;
+import com.hank.resource.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -26,6 +27,10 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
 
     @Override
     public void run(HelloWorldConfiguration helloWorldConfiguration, Environment environment) throws Exception {
-
+        final HelloWorldResource resource = new HelloWorldResource(
+                helloWorldConfiguration.getTemplate(),
+                helloWorldConfiguration.getDefaultName()
+        );
+        environment.jersey().register(resource);
     }
 }

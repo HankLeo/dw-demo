@@ -1,2 +1,2 @@
 template: Hello, %s!
-name: Stranger
+defaultName: Stranger
