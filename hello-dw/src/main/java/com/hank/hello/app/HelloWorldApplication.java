@@ -1,7 +1,7 @@
-package com.hank.app;
+package com.hank.hello.app;
 
-import com.hank.config.HelloWorldConfiguration;
-import com.hank.resource.HelloWorldResource;
+import com.hank.hello.config.HelloWorldConfiguration;
+import com.hank.hello.resource.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;

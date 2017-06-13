@@ -1,4 +1,4 @@
-package com.hank.api;
+package com.hank.hello.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;
