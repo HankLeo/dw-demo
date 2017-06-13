@@ -1,6 +1,7 @@
 package com.hank.hello.app;
 
 import com.hank.hello.config.HelloWorldConfiguration;
+import com.hank.hello.health.TemplateHealthCheck;
 import com.hank.hello.resource.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -33,6 +34,8 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
                 helloWorldConfiguration.getTemplate(),
                 helloWorldConfiguration.getDefaultName()
         );
+        final TemplateHealthCheck healthCheck = new TemplateHealthCheck(helloWorldConfiguration.getTemplate());
+        environment.healthChecks().register("template", healthCheck);
         environment.jersey().register(resource);
     }
 }

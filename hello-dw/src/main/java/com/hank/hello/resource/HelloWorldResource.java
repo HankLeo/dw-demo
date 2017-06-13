@@ -35,8 +35,9 @@ public class HelloWorldResource {
 
     @GET    // http request method
     @Timed
+    // return api instance
     public Saying sayHello(@QueryParam("name") Optional<String> name) {    // request optional param
-        final String content = String.format(template, name.or(defaultName));
+        final String content = String.format(template, name.or(defaultName));    // create content by config.yml
         return new Saying(counter.incrementAndGet(), content);
     }
 }
