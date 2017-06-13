@@ -30,7 +30,7 @@ public class HelloWorldResource {
     public HelloWorldResource(String template, String defaultName) {
         this.template = template;
         this.defaultName = defaultName;
-        this.counter = new AtomicLong();
+        this.counter = new AtomicLong();    // thread safe long
     }
 
     @GET    // http request method
