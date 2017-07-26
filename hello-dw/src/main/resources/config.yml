@@ -1,2 +1,4 @@
+# YAML configuration file is deserialized to an Java instance of your application’s configuration class and validated
+
 template: Hello, %s!
 defaultName: Stranger

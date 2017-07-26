@@ -23,6 +23,10 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
         return "hello-dw";
     }
 
+    /**
+     * This method is used to configure aspects of the application required before the application is run
+     * @param bootstrap
+     */
     @Override
     public void initialize(Bootstrap<HelloWorldConfiguration> bootstrap) {
         //
