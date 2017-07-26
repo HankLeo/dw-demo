@@ -52,6 +52,7 @@
                                         implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <!-- MainClass will allow you to run the JAR using java -jar. -->
                                     <mainClass>com.hank.hello.app.HelloWorldApplication</mainClass>
                                 </transformer>
                             </transformers>
