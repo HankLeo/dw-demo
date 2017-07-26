@@ -1,8 +1,8 @@
-package com.hank.hello.app;
+package com.hank.dw.hello.app;
 
-import com.hank.hello.config.HelloWorldConfiguration;
-import com.hank.hello.health.TemplateHealthCheck;
-import com.hank.hello.resource.HelloWorldResource;
+import com.hank.dw.hello.config.HelloWorldConfiguration;
+import com.hank.dw.hello.health.TemplateHealthCheck;
+import com.hank.dw.hello.resource.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;

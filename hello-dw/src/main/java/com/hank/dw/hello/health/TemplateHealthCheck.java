@@ -1,4 +1,4 @@
-package com.hank.hello.health;
+package com.hank.dw.hello.health;
 
 import com.codahale.metrics.health.HealthCheck;
 

@@ -1,4 +1,4 @@
-package com.hank.hello.config;
+package com.hank.dw.hello.config;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;

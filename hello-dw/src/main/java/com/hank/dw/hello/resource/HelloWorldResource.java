@@ -1,8 +1,8 @@
-package com.hank.hello.resource;
+package com.hank.dw.hello.resource;
 
 import com.codahale.metrics.annotation.Timed;
 import com.google.common.base.Optional;
-import com.hank.hello.api.Saying;
+import com.hank.dw.hello.api.Saying;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
